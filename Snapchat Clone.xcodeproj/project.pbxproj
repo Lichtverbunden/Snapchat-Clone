@@ -10,12 +10,15 @@
 		BE3755DA1D7B21C200525990 /* SnapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3755D91D7B21C200525990 /* SnapsViewController.swift */; };
 		BE3755DC1D7B25B100525990 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3755DB1D7B25B100525990 /* PictureViewController.swift */; };
 		BE8FDAB91D7BBA4C00CD2876 /* SelectUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8FDAB81D7BBA4C00CD2876 /* SelectUserViewController.swift */; };
+		BEC6FEAD1D7C6BCF00B4AB89 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC6FEAC1D7C6BCF00B4AB89 /* User.swift */; };
+		BED2E7AF1D7F421D00D120E6 /* ViewSnapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED2E7AE1D7F421D00D120E6 /* ViewSnapViewController.swift */; };
 		BED7CB461D7A6DDE00309C15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED7CB451D7A6DDE00309C15 /* AppDelegate.swift */; };
 		BED7CB481D7A6DDE00309C15 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED7CB471D7A6DDE00309C15 /* SignInViewController.swift */; };
 		BED7CB4B1D7A6DDE00309C15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BED7CB491D7A6DDE00309C15 /* Main.storyboard */; };
 		BED7CB4D1D7A6DDE00309C15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BED7CB4C1D7A6DDE00309C15 /* Assets.xcassets */; };
 		BED7CB501D7A6DDE00309C15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BED7CB4E1D7A6DDE00309C15 /* LaunchScreen.storyboard */; };
 		BED7CB581D7A702400309C15 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BED7CB571D7A702400309C15 /* GoogleService-Info.plist */; };
+		BEE7D8351D7E12CB00D64248 /* Snap.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE7D8341D7E12CB00D64248 /* Snap.swift */; };
 		E22F57A19036FE9757DD3828 /* Pods_Snapchat_Clone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6953BD503F3AD62C9E07D092 /* Pods_Snapchat_Clone.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +30,8 @@
 		BE3755D91D7B21C200525990 /* SnapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapsViewController.swift; sourceTree = "<group>"; };
 		BE3755DB1D7B25B100525990 /* PictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
 		BE8FDAB81D7BBA4C00CD2876 /* SelectUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectUserViewController.swift; sourceTree = "<group>"; };
+		BEC6FEAC1D7C6BCF00B4AB89 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BED2E7AE1D7F421D00D120E6 /* ViewSnapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewSnapViewController.swift; sourceTree = "<group>"; };
 		BED7CB421D7A6DDE00309C15 /* Snapchat Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Snapchat Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BED7CB451D7A6DDE00309C15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BED7CB471D7A6DDE00309C15 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +40,7 @@
 		BED7CB4F1D7A6DDE00309C15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BED7CB511D7A6DDE00309C15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BED7CB571D7A702400309C15 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BEE7D8341D7E12CB00D64248 /* Snap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Snap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,27 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BEC6FEAE1D7C6C1D00B4AB89 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BED7CB471D7A6DDE00309C15 /* SignInViewController.swift */,
+				BE3755D91D7B21C200525990 /* SnapsViewController.swift */,
+				BE3755DB1D7B25B100525990 /* PictureViewController.swift */,
+				BE8FDAB81D7BBA4C00CD2876 /* SelectUserViewController.swift */,
+				BED2E7AE1D7F421D00D120E6 /* ViewSnapViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BEC6FEAF1D7C6C6200B4AB89 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BEC6FEAC1D7C6BCF00B4AB89 /* User.swift */,
+				BEE7D8341D7E12CB00D64248 /* Snap.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		BED7CB391D7A6DDE00309C15 = {
 			isa = PBXGroup;
 			children = (
@@ -87,13 +114,11 @@
 		BED7CB441D7A6DDE00309C15 /* Snapchat Clone */ = {
 			isa = PBXGroup;
 			children = (
+				BEC6FEAE1D7C6C1D00B4AB89 /* ViewControllers */,
+				BEC6FEAF1D7C6C6200B4AB89 /* Models */,
+				BED7CB491D7A6DDE00309C15 /* Main.storyboard */,
 				BE3755D81D7B207E00525990 /* Snapchat Clone.entitlements */,
 				BED7CB451D7A6DDE00309C15 /* AppDelegate.swift */,
-				BED7CB471D7A6DDE00309C15 /* SignInViewController.swift */,
-				BE3755D91D7B21C200525990 /* SnapsViewController.swift */,
-				BE3755DB1D7B25B100525990 /* PictureViewController.swift */,
-				BE8FDAB81D7BBA4C00CD2876 /* SelectUserViewController.swift */,
-				BED7CB491D7A6DDE00309C15 /* Main.storyboard */,
 				BED7CB4C1D7A6DDE00309C15 /* Assets.xcassets */,
 				BED7CB4E1D7A6DDE00309C15 /* LaunchScreen.storyboard */,
 				BED7CB511D7A6DDE00309C15 /* Info.plist */,
@@ -234,7 +259,10 @@
 			files = (
 				BED7CB481D7A6DDE00309C15 /* SignInViewController.swift in Sources */,
 				BE3755DC1D7B25B100525990 /* PictureViewController.swift in Sources */,
+				BEC6FEAD1D7C6BCF00B4AB89 /* User.swift in Sources */,
+				BED2E7AF1D7F421D00D120E6 /* ViewSnapViewController.swift in Sources */,
 				BE8FDAB91D7BBA4C00CD2876 /* SelectUserViewController.swift in Sources */,
+				BEE7D8351D7E12CB00D64248 /* Snap.swift in Sources */,
 				BED7CB461D7A6DDE00309C15 /* AppDelegate.swift in Sources */,
 				BE3755DA1D7B21C200525990 /* SnapsViewController.swift in Sources */,
 			);

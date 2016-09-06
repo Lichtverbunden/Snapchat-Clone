@@ -19,11 +19,13 @@ class PictureViewController: UIViewController, UIImagePickerControllerDelegate, 
     @IBOutlet weak var nextButton: UIButton!
     
     var imagePicker = UIImagePickerController()
+    var uuid = NSUUID().uuidString
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
         imagePicker.delegate = self
+        nextButton.isEnabled = false
     }
 
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any])
@@ -33,6 +35,8 @@ class PictureViewController: UIViewController, UIImagePickerControllerDelegate, 
         imageView.image = image
         
         imageView.backgroundColor = UIColor.clear
+        
+        nextButton.isEnabled = true
         
         imagePicker.dismiss(animated: true, completion: nil)
     
@@ -55,7 +59,7 @@ class PictureViewController: UIViewController, UIImagePickerControllerDelegate, 
         let imagesFolder = FIRStorage.storage().reference().child("images")
         let imageData = UIImageJPEGRepresentation(imageView.image!, 0.1)!
         
-        imagesFolder.child("\(NSUUID().uuidString).jpg").put(imageData, metadata: nil)
+        imagesFolder.child("\(uuid).jpg").put(imageData, metadata: nil)
         {
             (metadata, error) in
             print("We tried to upload.")
@@ -67,7 +71,7 @@ class PictureViewController: UIViewController, UIImagePickerControllerDelegate, 
             {
                 print(metadata?.downloadURL())
                 
-                self.performSegue(withIdentifier: "selectUserSegue", sender: nil)
+                self.performSegue(withIdentifier: "selectUserSegue", sender: metadata?.downloadURL()!.absoluteString)
             }
         }
 
@@ -75,7 +79,11 @@ class PictureViewController: UIViewController, UIImagePickerControllerDelegate, 
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
+       let nextVC = segue.destination as! SelectUserViewController
         
+        nextVC.imageURL = sender as! String
+        nextVC.descrip = descriptionTextField.text!
+        nextVC.uuid = uuid
     }
 
 }
